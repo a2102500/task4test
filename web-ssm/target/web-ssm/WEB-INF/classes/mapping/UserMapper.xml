@@ -29,7 +29,7 @@
         SELECT * FROM t_user
     </select>
 
-    <select id="count" resultMap="UserBaseMap">
+    <select id="count" resultType="int">
     select count(*) from t_user
     </select>
 

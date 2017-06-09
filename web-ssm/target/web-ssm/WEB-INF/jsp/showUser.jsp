@@ -133,7 +133,7 @@
                 <span class="up-3">累计在线学习人数</span>
             </p>
             <p>
-                <img src="/imges/453254312.png">12400<br>
+                <img src="/imges/453254312.png">${count}<br>
                 <span class="up-3">学员已经找到满意工作</span>
             </p>
         </div>

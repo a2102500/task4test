@@ -28,10 +28,18 @@ public class UserController {
     @Resource
     private UserDao userDao;
 
+//    @RequestMapping(value ="/showUser",method= RequestMethod.GET)
+//    public String getCount(ModelMap modelMap){
+//        int count=userDao.count();
+//        modelMap.put("count",count);
+//        return "showUser";
+//    }
     @RequestMapping(value ="/showUser",method= RequestMethod.GET)
     public String getHomeinfo(ModelMap modelMap){
         List<User> list=userDao.selectAllUser();
+        int count=userDao.count();
         modelMap.put("userList",list);
+        modelMap.put("count",count);
         return "showUser";
     }
 

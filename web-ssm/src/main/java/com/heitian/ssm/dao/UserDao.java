@@ -19,4 +19,5 @@ public interface UserDao {
 
      List<User> selectAllUser();
 
+     int count();
 }
